@@ -1,0 +1,407 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #212121;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+p {
+  font-size: 15px;
+}
+
+a {
+  color: #262626;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  margin-right: auto; /* 1 */
+  margin-left: auto; /* 1 */
+
+  max-width: 960px; /* 2 */
+
+  padding-right: 10px; /* 3 */
+  padding-left: 10px; /* 3 */
+}
+
+.dark {
+  color: #ffffff;
+}
+
+/* button */
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  background-color: #1976d2;
+  color: #ffffff;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.btn:hover {
+  background-color: #2196f3;
+}
+
+/* navigation */
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  margin-bottom: 4rem;
+}
+
+.main-nav img {
+  width: 86px;
+  height: 86px;
+}
+
+.main-nav ul {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+.main-nav ul li {
+  margin-left: 3rem;
+}
+
+.main-nav ul li a:hover {
+  padding-bottom: 5px;
+  border-bottom: 2px solid #1976d2;
+}
+
+/* header showcase */
+
+header.showcase {
+  width: 100%;
+  height: 350px;
+  background: url("./assets/header-bg.svg") no-repeat;
+  background-size: contain;
+  background-position: right center;
+  margin-bottom: 4rem;
+}
+
+header.showcase .content {
+  width: 60%;
+}
+
+header.showcase h2 {
+  font-size: 2.4em;
+}
+
+header.showcase p {
+  margin: 1rem 0;
+}
+
+/* vision section */
+.vision {
+  width: 100%;
+  height: 250px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80")
+      no-repeat center center/cover;
+  position: relative;
+  margin-bottom: 4rem;
+}
+
+.vision .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.vision h2 {
+  font-size: 2.4em;
+}
+
+/* about us */
+
+.about-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.about-us h2 {
+  font-size: 2em;
+  padding-bottom: 5px;
+  border-bottom: 3px solid #1976d2;
+  text-align: center;
+  display: inline-block;
+  margin-bottom: 4rem;
+}
+
+.about-us .content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 3rem;
+}
+.about-us img {
+  width: 100%;
+}
+
+/* our services */
+
+.services {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.services h2 {
+  font-size: 2em;
+  padding-bottom: 5px;
+  border-bottom: 3px solid #1976d2;
+  text-align: center;
+  display: inline-block;
+  margin-bottom: 4rem;
+}
+
+.services .content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+.services img {
+  width: 100%;
+}
+
+/* how we operate */
+
+.operate {
+  width: 100%;
+  padding: 2rem;
+  background: url("./assets/operate-image.svg") no-repeat;
+  background-size: contain;
+  background-position: right center;
+  background: rgb(25, 118, 210);
+  background: linear-gradient(
+    90deg,
+    rgba(25, 118, 210, 1) 0%,
+    rgba(33, 150, 243, 1) 62%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.operate .content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-content: center;
+  grid-gap: 3rem;
+}
+
+.operate h2 {
+  font-size: 2em;
+}
+
+.operate p {
+  margin: 1rem 0;
+}
+
+.operate .tagline {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.operate img {
+  width: 100%;
+}
+
+/* contact us */
+
+.contact-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+  text-align: center;
+  background-color: #f5f5f5;
+}
+
+.contact-us h2 {
+  width: 50%;
+  font-size: 1.8em;
+  margin-bottom: 2rem;
+}
+
+/* footer */
+
+.main-footer {
+  padding: 3rem 0;
+  background-color: #212121;
+  color: white;
+}
+
+.main-footer .content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 3rem;
+}
+
+.main-footer p:first-child {
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: white;
+  font-size: 1em;
+}
+
+.main-footer p {
+  margin-bottom: 1rem;
+  color: #757575;
+  font-size: 0.9em;
+}
+
+.main-footer .content ul li {
+  margin-bottom: 1rem;
+  color: #757575;
+  display: flex;
+  font-size: 0.9em;
+}
+
+.main-footer .content ul li i {
+  margin-right: 10px;
+}
+
+.main-footer .social-links {
+  display: flex;
+  align-items: center;
+}
+
+.main-footer .social-links li {
+  margin-right: 1rem;
+}
+
+.main-footer .social-links li a {
+  color: #424242;
+}
+
+.main-footer .social-links li a:hover {
+  color: #757575;
+}
+
+.main-footer .social-links li:last-child a {
+  text-decoration: underline;
+}
+
+@media (max-width: 500px) {
+  .main-nav {
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #e0e0e0;
+    justify-content: center;
+  }
+
+  .main-nav ul {
+    display: none;
+  }
+
+  header.showcase {
+    text-align: center;
+    margin-bottom: 3rem;
+    background: none;
+  }
+
+  header.showcase .content {
+    width: 100%;
+  }
+
+  .vision {
+    height: 350px;
+    margin-bottom: 3rem;
+  }
+
+  .vision h2 {
+    display: block;
+  }
+
+  .vision .content {
+    width: 90%;
+  }
+
+  .about-us {
+    margin-bottom: 3rem;
+  }
+
+  .about-us h2 {
+    margin-bottom: 3rem;
+  }
+
+  .about-us .content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .about-us img {
+    width: 90%;
+  }
+
+  .services {
+    margin-bottom: 3rem;
+  }
+
+  .services img {
+    width: 90%;
+  }
+
+  .services h2 {
+    margin-bottom: 3rem;
+  }
+
+  .services .content {
+    grid-template-columns: 1fr;
+  }
+
+  .operate {
+    padding: 3rem 0;
+  }
+
+  .operate .content {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-us {
+    height: auto;
+    padding: 3rem 0;
+  }
+
+  .contact-us h2 {
+    width: 90%;
+    font-size: 1.2em;
+  }
+
+  .main-footer .content {
+    grid-template-columns: 1fr;
+  }
+}
