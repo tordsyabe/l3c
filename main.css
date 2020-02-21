@@ -92,7 +92,30 @@ ul {
   border-bottom: 2px solid #1976d2;
 }
 
-/* header showcase */
+/* header showcase contact us*/
+
+header.showcase-contact-us {
+  width: 100%;
+  height: 400px;
+  background: url("./assets/contact-bg.svg") no-repeat;
+  background-size: contain;
+  background-position: right center;
+  margin-bottom: 4rem;
+}
+
+header.showcase-contact-us .content {
+  width: 60%;
+}
+
+header.showcase-contact-us h2 {
+  font-size: 2.4em;
+}
+
+header.showcase-contact-us p {
+  margin: 1rem 0;
+}
+
+/* header showcase index*/
 
 header.showcase {
   width: 100%;
@@ -136,6 +159,12 @@ header.showcase p {
 
 .vision h2 {
   font-size: 2.4em;
+}
+
+/* contact us location section */
+
+.location {
+  margin-bottom: 4rem;
 }
 
 /* about us */
@@ -332,6 +361,18 @@ header.showcase p {
     text-align: center;
     margin-bottom: 3rem;
     background: none;
+    height: auto;
+  }
+
+  header.showcase-contact-us {
+    text-align: center;
+    margin-bottom: 3rem;
+    background: none;
+    height: auto;
+  }
+
+  header.showcase-contact-us .content {
+    width: 100%;
   }
 
   header.showcase .content {
@@ -349,6 +390,10 @@ header.showcase p {
 
   .vision .content {
     width: 90%;
+  }
+
+  .location {
+    margin-bottom: 3rem;
   }
 
   .about-us {
