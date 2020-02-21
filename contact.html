@@ -3,13 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
       integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/contact.css" />
     <title>L3C | Contact | Logistics | Marine Operations | Offshore</title>
   </head>
   <body>
@@ -21,10 +23,10 @@
         /></a>
 
         <ul>
-          <li><a href="#aboutUs">Who We Are</a></li>
-          <li><a href="#services">What We Offer</a></li>
-          <li><a href="#operate">How We Operate</a></li>
-          <li><a href="#contactus">Contact Us</a></li>
+          <li><a href="l3c/#aboutUs">Who We Are</a></li>
+          <li><a href="l3c/#services">What We Offer</a></li>
+          <li><a href="l3c/#operate">How We Operate</a></li>
+          <li><a href="#" class="activeLink">Contact Us</a></li>
         </ul>
       </nav>
 
@@ -47,7 +49,7 @@
         </div>
       </header>
     </div>
-    <!-- Our Vision -->
+    <!-- LOCATION -->
     <section class="location">
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7007.70372181877!2d-0.18184491549567436!3d51.61226480537531!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487619e51527bae3%3A0xe759f0b7bcd82c57!2swoodberry%20house%2C%202%20Woodberry%20Grove%2C%20North%20Finchley%2C%20London%20N12%200DR%2C%20UK!5e0!3m2!1sen!2sus!4v1582295658689!5m2!1sen!2sus"
@@ -57,33 +59,37 @@
         style="border:0;"
         allowfullscreen=""
       ></iframe>
+      <span>
+        <i class="fas fa-location-arrow fa-lg"></i> Winnington House 2 Woodberry
+        Grove North Finchley London N12 0DR, United Kingdom
+      </span>
     </section>
     <!-- Contact Form -->
     <div class="container">
-      <section class="about-us" id="contactForm">
+      <section class="main-content" id="contactForm">
         <h2>Contact Form</h2>
-        <div class="content">
-          <div>
-            <p>
-              L3C is a new company created in 2016 by logistics specialist to
-              provice the oil and gas industry with our expertise in
-              administrative and operational support in their offshore
-              activities.
-            </p>
-            <br />
-            <p>
-              Working primarily within the oil and gas industry in countries
-              such us Angola, Congo, Gabon and Equatorial Guinea, there's a
-              breadth of knowledge, with three of our main shareholders
-              possesing experience in finance, operations, sales and business
-              development.
-            </p>
-          </div>
-          <!-- <img src="./assets/about-us-image.svg" alt="About Us" /> -->
+        <div class="form" onsubmit="">
+          <form>
+            <input type="text" id="name" placeholder="Your name" />
+
+            <input type="text" id="contact" placeholder="Contact number" />
+
+            <input type="text" id="email" placeholder="Email" />
+
+            <input type="text" id="subject" placeholder="Subject" />
+
+            <textarea
+              rows="7"
+              id="enquiry"
+              placeholder="Compose your enquiry here."
+            ></textarea>
+
+            <button type="submit" class="btn">Send</button>
+          </form>
         </div>
       </section>
-
-
+    </div>
+    <!-- FOOTER -->
     <footer class="main-footer">
       <div class="container">
         <div class="content">
@@ -92,20 +98,33 @@
               <i class="fas fa-location-arrow fa-lg"></i> Winnington House 2
               Woodberry Grove North Finchley London N12 0DR, United Kingdom
             </li>
-            <li><i class="fas fa-phone-square fa-lg"></i> +1 555 123456</li>
             <li>
-              <i class="fas fa-envelope-open-text fa-lg"></i>
-              emailus@ouremail.com
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7007.70372181877!2d-0.18184491549567436!3d51.61226480537531!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487619e51527bae3%3A0xe759f0b7bcd82c57!2swoodberry%20house%2C%202%20Woodberry%20Grove%2C%20North%20Finchley%2C%20London%20N12%200DR%2C%20UK!5e0!3m2!1sen!2sus!4v1582295658689!5m2!1sen!2sus"
+                width="100%"
+                height="250"
+                frameborder="0"
+                style="border:0;"
+                allowfullscreen=""
+              ></iframe>
             </li>
           </ul>
           <div>
-            <p>Logistics, Cost, Controlling, Consultants</p>
+            <p>
+              <a href="/">Logistics, Cost, Controlling, Consultants</a>
+            </p>
             <p>
               L3C is a new company created in 2016 by logistics specialists to
               provide the oil and gas industry with our expertise in
               administrative and operational support in their offshore
               activities.
             </p>
+            <ul class="footer-links">
+              <li><a href="l3c/#aboutUs">Who We Are</a></li>
+              <li><a href="l3c/#services">What We Offer</a></li>
+              <li><a href="l3c/#operate">How We Operate</a></li>
+              <li><a href="#contactForm">Contact Us</a></li>
+            </ul>
             <ul class="social-links">
               <li>
                 <a href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
