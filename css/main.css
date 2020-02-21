@@ -309,6 +309,67 @@ header.showcase p {
   text-decoration: underline;
 }
 
+/* MODAL STYLING */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: all 0.2s ease-in-out;
+  overflow: hidden;
+  z-index: 100;
+  display: none;
+}
+
+.modal-content div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-content div i {
+  cursor: pointer;
+}
+
+.modal-content div i:hover {
+  color: #757575;
+}
+
+.modal-content {
+  background: #fff;
+  width: 60%;
+  height: 95%;
+  padding: 1.5rem 2rem;
+  position: relative;
+  z-index: 700;
+  border-radius: 5px;
+  overflow: auto;
+  margin: auto;
+}
+
+.modal-content p {
+  margin-bottom: 1rem;
+}
+
+.modal-content span {
+  font-weight: bold;
+}
+
+.modal-content p:last-child {
+  margin-bottom: 0;
+}
+
+.modal-content ul {
+  margin-bottom: 1rem;
+}
+
+.modal-content ul li {
+  font-size: 15px;
+  margin-left: 1rem;
+}
+
 /* MEDIA QUERIES */
 
 /* MOBILE MEDIA QUERIES */
@@ -394,5 +455,9 @@ header.showcase p {
 
   .main-footer .content {
     grid-template-columns: 1fr;
+  }
+
+  .modal-content {
+    width: 90%;
   }
 }

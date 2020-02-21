@@ -43,7 +43,7 @@
             site.
           </p>
 
-          <a href="#contactForm" class="btn">
+          <a href="#contact-form" class="btn">
             Email us today
           </a>
         </div>
@@ -66,22 +66,47 @@
     </section>
     <!-- Contact Form -->
     <div class="container">
-      <section class="main-content" id="contactForm">
+      <section class="main-content" id="contact-form">
         <h2>Contact Form</h2>
-        <div class="form" onsubmit="">
-          <form>
-            <input type="text" id="name" placeholder="Your name" />
+        <div class="form">
+          <form id="contactForm">
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your name"
+              required
+            />
 
-            <input type="text" id="contact" placeholder="Contact number" />
+            <input
+              type="text"
+              id="contact"
+              name="contact"
+              placeholder="Contact number"
+              required
+            />
 
-            <input type="text" id="email" placeholder="Email" />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email"
+              required
+            />
 
-            <input type="text" id="subject" placeholder="Subject" />
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              placeholder="Subject"
+              required
+            />
 
             <textarea
               rows="7"
               id="enquiry"
               placeholder="Compose your enquiry here."
+              required
             ></textarea>
 
             <button type="submit" class="btn">Send</button>
@@ -133,12 +158,16 @@
                 <a href="#"><i class="fab fa-twitter-square fa-2x"></i></a>
               </li>
               <li>
-                <a href="#">Terms and contions.</a>
+                <a
+                  href="https://www.dropbox.com/s/69ai4urpthdebh7/L3C%20T%26C.pdf?dl=0"
+                  >Terms and contions.</a
+                >
               </li>
             </ul>
           </div>
         </div>
       </div>
     </footer>
+    <script src="js/index.js"></script>
   </body>
 </html>
